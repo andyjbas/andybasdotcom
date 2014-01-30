@@ -5,6 +5,11 @@ exports.config =
       joinTo:
         'app.js':    /^app/
         'vendor.js': /^vendor/
+      order:
+        before: [
+          'vendor/scripts/jquery-2.1.0.min.js',
+          'vendor/scripts/riot-0.9.7.js'
+        ]
     stylesheets:
       joinTo: 'app.css'
     templates:
