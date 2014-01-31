@@ -5,5 +5,9 @@
   "dependencies": {
     "modernizr": "~2.7.1"
   },
-  "overrides": {}
+  "overrides": {
+  	"modernizr": {
+  		"main": "modernizr.js"
+  	}
+  }
 }
