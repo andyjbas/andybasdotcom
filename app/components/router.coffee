@@ -1,6 +1,13 @@
 class Router
   constructor: (@app) ->
-    console.log 'ROUTER IS ALIVE'
-    console.log @app
+    @app.on 'route', @_triggerRoute
+
+    if @app.config.path is ''
+      @app.trigger 'route', '#/home'
+
+  # private
+
+  _triggerRoute: (href) -> $.route href
 
 module.exports = Router
+

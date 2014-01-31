@@ -6,12 +6,25 @@ html.no-js(lang='en')
 		title Andy Bas
 		link(rel='stylesheet', href='app.css')
 	body
-		p hey hey hey bitch
-		//- include templates/_home.static.jade
+		.off-canvas-wrap
+			.inner-wrap
+				nav.tab-bar(style='background: white;')
+					section.left-small(style='background: #333333; margin: 20px 0 0 20px;')
+						a.left-off-canvas-toggle.menu-icon
+							span
+				aside#menu.left-off-canvas-menu
+					include templates/_menu.static.jade
+				section.main-section
+					#home(style='display: none;')
+						include templates/_home.static.jade
+					#about(style='display: none;')
+						include templates/_about.static.jade
+					#work(style='display: none;')
+						include templates/_work.static.jade
+					#contact(style='display: none;')
+						include templates/_contact.static.jade
+				a.exit-off-canvas
 		script(src='vendor.js')
 		script(src='app.js')
 		script.
 			require('initialize');
-
-
-
