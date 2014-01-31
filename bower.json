@@ -2,6 +2,8 @@
   "name": "andybasdotcom",
   "version": "0.0.1",
   "main": "public/app.js",
-  "dependencies": {},
+  "dependencies": {
+    "modernizr": "~2.7.1"
+  },
   "overrides": {}
 }
