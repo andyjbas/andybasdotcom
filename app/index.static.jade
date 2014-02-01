@@ -15,16 +15,13 @@ html.no-js(lang='en')
 				aside#menu.left-off-canvas-menu
 					include templates/_menu.static.jade
 				section.main-section
-					#home(style='display: none;')
-						include templates/_home.static.jade
-					#about(style='display: none;')
-						include templates/_about.static.jade
-					#work(style='display: none;')
-						include templates/_work.static.jade
-					#contact(style='display: none;')
-						include templates/_contact.static.jade
+					#home
+					#about
+					#work
+					#contact
 				a.exit-off-canvas
 		script(src='js/vendor.js')
 		script(src='js/app.js')
+		script(src='js/template.js')
 		script.
 			require('initialize');

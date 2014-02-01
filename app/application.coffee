@@ -1,8 +1,8 @@
 class Application
   MODULES: [
     'components/router',
-    'components/view_switcher',
-    'components/navigation'
+    'components/navigation',
+    'views/mainView'
   ]
 
   constructor: (@config) ->
