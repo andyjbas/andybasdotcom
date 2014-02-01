@@ -8,7 +8,10 @@ class Application
   constructor: (@config) ->
     @app = $.observable(@)
     @_registerModule(m) for m in @MODULES
-    @app.trigger('ready')
+    @app.trigger 'ready'
+
+    if @config.path is ''
+      @app.trigger 'route', '#/home'
 
   # private
 
