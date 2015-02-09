@@ -1,12 +1,20 @@
-body, html, .off-canvas-wrap, .inner-wrap
-  height: 100%
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400)
+@import 'settings'
+@import 'normalize'
+@import 'foundation'
 
-.off-canvas-wrap
-  overflow: auto
+@import 'menu'
+@import 'home'
+@import 'work'
 
-section.left-small
-  border: none
-  box-shadow: none
+#main
+  padding-top: 5%
 
-nav
-  margin-bottom: 10px
+.page-lead
+  margin-bottom: 20px
+  text-align: center
+
+@media #{$medium-up}
+  .block-v-align
+    display: flex
+    align-items: center
