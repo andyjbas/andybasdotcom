@@ -30,6 +30,3 @@ public/
 
 # Bower stuff.
 bower_components/
-
-# custom deploy script
-deploy.sh
