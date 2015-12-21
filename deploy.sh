@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brunch build -P
+npm run build-production
 git checkout gh-pages
 cp .gitignore ../.gitignore
 git rm -rf .
